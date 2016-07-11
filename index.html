@@ -5,36 +5,14 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-   <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-        window.localStorage.setItem("key", "value");
-        var keyname = window.localStorage.key(i);
-        // keyname is now equal to "key"
-        var value = window.localStorage.getItem("key");
-        // value is now equal to "value"
-        window.localStorage.removeItem("key");
-        window.localStorage.setItem("key2", "value2");
-        window.localStorage.clear();
-        // localStorage is now empty
-    }
-    </script>
 </head>
 <body>
 <div data-role="page" id="page1">
+<div data-role="header">FSJQM</div>
 	<a href="#page2" class="ui-btn">Go to page 2</a>
-
+<div data-role="footer">All Rights Revoked 2016</div>
 </div>
 <div data-role="page" id="page2">
-    <h1>Example</h1>
-    <p>localStorage</p>
 	<a href="#page1" class="ui-btn">Go to page 1</a>    
 </div></body>
 </html>
