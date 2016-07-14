@@ -1,44 +1,46 @@
-<!DOCTYPE html> 
-<html> 
-	<head>
-
-<!-- Include meta tag to ensure proper rendering and touch zooming -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Include jQuery Mobile stylesheets -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
-<!-- Include the jQuery library -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<!-- Include the jQuery Mobile library -->
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
-<body> 
+<body>
 
-<div data-role="page">
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  <h1>Welcome To My Homepage</h1>
+  </div>
 
-	<div data-role="header">
-		<h1>My Title</h1>
-	</div><!-- /header -->
+  <div data-role="main" class="ui-content">
+  <p>Welcome!</p>
+<a href="#pagetwo">Go to page two</a>
+  </div>
 
-	<div data-role="content">	
-		<p>Hello world</p>		
-	</div><!-- /content -->
-	<ul data-role="listview" data-inset="true" data-filter="true">
-	<li><a href="#">Acura</a></li>
-	<li><a href="#">Audi</a></li>
-	<li><a href="#">BMW</a></li>
-	<li><a href="#">Cadillac</a></li>
-	<li><a href="#">Ferrari</a></li>
-</ul>
-<form>
-   <label for="slider-0">Input slider:</label>
-   <input type="range" name="slider" id="slider-0" value="25" min="0" max="100"  />
-</form>
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div>
+<div date-role="page" id="pagetwo">
+  <div data-role="header">
+  <h1>PAGE 2</h1>
+  </div>
 
-</div><!-- /page -->
+  <div data-role="main" class="ui-content">
+  <p>Welcome to page two!</p>
+<a href="#pageone">Go to page one</a>
+  </div>
 
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div>
 </body>
 </html>
+
+
