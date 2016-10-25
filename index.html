@@ -1,27 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css">
-    <script src="https://code.jquery.com/jquery-[version].min.js"></script>
-    <script src="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-    <div data-role="page">
- 
-        <div data-role="header">
-            <h1>My Title</h1>
-        </div><!-- /header -->
- 
-        <div role="main" class="ui-content">
-            <p>Hello world</p>
-        </div><!-- /content -->
- 
-        <div data-role="footer">
-            <h4>My Footer</h4>
-        </div><!-- /footer -->
- 
-    </div><!-- /page -->
+<div data-role="page" id="main">
+	<div data-role="header">Test</div>
+	<div data-role="body">
+		<label for="name">Name:</label><input type="text" id="name">
+		<input type="submit" id="name-submit" value="grab">
+		<a href="#page1">Page 1</a>
+		<div id="name-data"></div>
+		<script src="js/global.js"></script>
+	</div>
+	<div data-role="footer">
+		footer
+	</div>
+</div>
+<div data-role="page" id="page1">
+	<div data-role="header">Test</div>
+	<div data-role="body">
+		<label for="name">Page 1:</label><input type="text" id="name">
+		<input type="submit" id="name-submit" value="grab">
+		<a href="#main">Back to Main</a>
+		<div id="name-data"></div>
+		<script src="js/global.js"></script>
+	</div>
+	<div data-role="footer">
+		footer
+	</div>
+</div>
 </body>
 </html>
